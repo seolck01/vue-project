@@ -4,6 +4,8 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+require('!style-loader!css-loader!less-loader!./assets/style/global.less'); //导入全局样式
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
