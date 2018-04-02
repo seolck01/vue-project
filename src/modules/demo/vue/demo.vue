@@ -4,15 +4,31 @@
     <div class="globalTest bg-blue">
        {{msg}}
     </div>
+    <br>
+    当前 count : {{count}}
+    <br><br>
+    <el-button @click="testAction">测试action +1</el-button>
+    <el-button type="primary" @click="testMutation">测试 mutation 置1</el-button>
   </div>
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
   export default {
-    name: 'HelloWorld',
+    computed:mapGetters({
+      count:'getCount'
+    }),
     data() {
       return {
         msg: '全局样式测试'
+      }
+    },
+    methods:{
+      testAction(){
+        this.$store.dispatch('addCount',1)
+      },
+      testMutation(){
+        this.$store.commit('INIT_COUNT')
       }
     }
   }
