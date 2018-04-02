@@ -1,7 +1,8 @@
 <template>
   <div class="hello">
+    <div>我是demo页面</div>
     <div class="globalTest bg-blue">
-      全局样式测试
+       {{msg}}
     </div>
   </div>
 </template>
@@ -11,7 +12,7 @@
     name: 'HelloWorld',
     data() {
       return {
-        msg: 'Welcome to Your Vue.js App'
+        msg: '全局样式测试'
       }
     }
   }
@@ -24,6 +25,7 @@
       width: 200px;
       height: 200px;
       line-height: 200px;
+      margin: 0 auto;
       color: @colorWhite;
     }
   }
