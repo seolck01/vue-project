@@ -1,6 +1,6 @@
 # vue-project
 
-> 项目简单粗暴，文件结构清晰，配置信息也做了笔记，可以让你一步步的学习配置。
+> 项目简单粗暴，文件结构清晰，分类清楚，包括api分类，vue项目模块化分类，vuex，router 等等，项目配置信息也做了笔记，不懂的或者自己配置出错的可以看看我的笔记。
 
 ![目录结构.png](https://upload-images.jianshu.io/upload_images/8677726-180d3a4609891036.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
