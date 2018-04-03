@@ -1,10 +1,11 @@
 export default {
-  getTest:{
+  testGet:{
     url: '/testAPI/get',
     method: 'get'
   },
-  postTest:{
+  testPost:{
     url: '/testAPI/post',
     method: 'post'
-  }
+  },
+  testErr:{url:'/err',method: 'post'}
 }

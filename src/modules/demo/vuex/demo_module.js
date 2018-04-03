@@ -9,6 +9,9 @@ const mutations = {
   [types.ADD_COUNT](state,params){
     state.count += params;
   },
+  [types.DEL_COUNT](state,params){
+    state.count -= params;
+  },
   [types.INIT_COUNT](state){
     state.count = 1;
   }

@@ -7,8 +7,10 @@
     <br>
     当前 count : {{count}}
     <br><br>
-    <el-button @click="testAction">测试action +1</el-button>
-    <el-button type="primary" @click="testMutation">测试 mutation 置1</el-button>
+    测试AXIOS :
+    <el-button @click="testGET">get</el-button>
+    <el-button @click="testPOST">post</el-button>
+    <el-button @click="testERROR">error</el-button>
   </div>
 </template>
 
@@ -24,11 +26,14 @@
       }
     },
     methods:{
-      testAction(){
-        this.$store.dispatch('addCount',1)
+      testGET(){
+        this.$store.dispatch('addCount',{testData:1});
       },
-      testMutation(){
-        this.$store.commit('INIT_COUNT')
+      testPOST(){
+        this.$store.dispatch('deleteCount');
+      },
+      testERROR(){
+        this.$store.dispatch('errorTest');
       }
     }
   }
