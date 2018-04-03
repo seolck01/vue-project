@@ -1,21 +1,40 @@
 # vue-project
 
-> A Vue.js project
+> 项目简单粗暴，文件结构清晰，配置信息也做了笔记，可以让你一步步的学习配置。
 
-## Build Setup
+![目录结构.png](https://upload-images.jianshu.io/upload_images/8677726-180d3a4609891036.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+页面预览
+
+![image.png](https://upload-images.jianshu.io/upload_images/8677726-395495ff1df17616.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+## 配置方法
+* [总体预览 包括项目介绍](https://www.jianshu.com/p/9b22c2ba91d3)
+* [vue-cli 配置 less 全局样式和全局变量](https://www.jianshu.com/p/50f8a751b39e)
+* [vue-router 分模块的路由全局配置](https://www.jianshu.com/p/bb360acda3d8)
+* [vue-cli 配置 vuex](https://www.jianshu.com/p/4e84863224f7)
+* [vue-cli 配置axios](https://www.jianshu.com/p/261aa31e6f54)
+* [element-ui 快速配置](http://element.eleme.io/#/zh-CN/component/quickstart)
+
+## 启动项目
 
 ``` bash
-# install dependencies
+# 克隆项目
+git clone https://github.com/gershonv/vue-project.git
+
+# 安装依赖
 npm install
 
 # serve with hot reload at localhost:8080
 npm run dev
 
-# build for production with minification
-npm run build
+# 后端安装依赖
+cd server
+npm install
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
+# 启动后台
+node app
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+# 基本完成 尽情测试
+欢迎 star
+
