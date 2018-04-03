@@ -9,7 +9,7 @@
 ![image.png](https://upload-images.jianshu.io/upload_images/8677726-395495ff1df17616.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 配置方法
-* [总体预览 包括项目介绍](https://www.jianshu.com/p/9b22c2ba91d3)
+* [总体预览 包括项目介绍](https://www.jianshu.com/p/00b60c1b27b5)
 * [vue-cli 配置 less 全局样式和全局变量](https://www.jianshu.com/p/50f8a751b39e)
 * [vue-router 分模块的路由全局配置](https://www.jianshu.com/p/bb360acda3d8)
 * [vue-cli 配置 vuex](https://www.jianshu.com/p/4e84863224f7)
