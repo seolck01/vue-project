@@ -30,7 +30,6 @@ export const addCount = ({commit},option={}) =>{
       if(res.data.recode  == '0000'){
         commit(types.ADD_COUNT,res.data.count);
         resolve(res);
-        console.log(1);
       }else {
         reject();
       }

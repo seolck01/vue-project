@@ -11,19 +11,26 @@
     <el-button @click="testGET">get</el-button>
     <el-button @click="testPOST">post</el-button>
     <el-button @click="testERROR">error</el-button>
+    <br><br>
+    <div>util工具包测试 ：{{today}}</div>
   </div>
 </template>
 
 <script>
   import { mapGetters } from 'vuex'
+  import dataUtil from '../../../common/util/dataUtil'
   export default {
     computed:mapGetters({
       count:'getCount'
     }),
     data() {
       return {
-        msg: '全局样式测试'
+        msg: '全局样式测试',
+        today:''
       }
+    },
+    mounted(){
+      this.today = dataUtil.getToday();
     },
     methods:{
       testGET(){
