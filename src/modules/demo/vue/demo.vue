@@ -18,7 +18,7 @@
 
 <script>
   import { mapGetters } from 'vuex'
-  import dataUtil from '../../../common/util/dataUtil'
+  import dateUtil from '../../../common/util/dateUtil'
   export default {
     computed:mapGetters({
       count:'getCount'
@@ -30,7 +30,7 @@
       }
     },
     mounted(){
-      this.today = dataUtil.getToday();
+      this.today = dateUtil.getToday();
     },
     methods:{
       testGET(){
