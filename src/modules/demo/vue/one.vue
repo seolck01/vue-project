@@ -1,0 +1,50 @@
+<template>
+  <div class="hello">
+    <div>我是demo页面</div>
+    <div class="globalTest bg-blue">{{msg}}</div>
+    <br>
+    当前 count : {{count}}
+    <br>
+    <br>测试AXIOS :
+    <el-button @click="testGET">get</el-button>
+    <el-button @click="testPOST">post</el-button>
+    <el-button @click="testERROR">error</el-button>
+    <br>
+    <br>
+    <div>util工具包测试 ：{{today}}</div>
+  </div>
+</template>
+
+<script>
+import { mapGetters } from "vuex";
+
+export default {
+  computed: mapGetters({
+    count: "getCount"
+  }),
+  methods: {
+    testGET() {
+      this.$store.dispatch("addCount", { testData: 1 });
+    },
+    testPOST() {
+      this.$store.dispatch("deleteCount");
+    },
+    testERROR() {
+      this.$store.dispatch("errorTest");
+    }
+  }
+};
+</script>
+
+
+<style lang="less">
+.hello {
+  .globalTest {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    margin: 0 auto;
+    color: @colorWhite;
+  }
+}
+</style>
